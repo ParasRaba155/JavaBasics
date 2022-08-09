@@ -3,7 +3,7 @@ package DesignPattern;
 public class Client {
     public static void main(String[] args){
         try{
-            Document d1 = DocumentFactory.create("tar");
+            Document d1 = DocumentFactory.get("tar");
             d1.read();
         }
         catch(NullPointerException e){
